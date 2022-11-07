@@ -1,5 +1,4 @@
 .input:focus {
-
 }
 
 .input {
@@ -9,15 +8,17 @@
 }
 
 .superInput {
+
 }
 
 .errorInput {
+    border: red 2px solid;
+
 }
 
 .errorInput:focus {
-}
+    }
 
 .error {
-    border: 5px;
-   color: #CC1439
+    color: #CC1439;
 }
