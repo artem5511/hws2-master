@@ -1,16 +1,23 @@
 .sidebar {
+ width: 300px;
+    height: 200px;
 }
+
 
 .sidebar.open {
 }
 
 .background {
+opacity: 0.5%;
 
 }
 
 .nav {
+    height: 100px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+
 }
 
 .nav a {
@@ -22,6 +29,9 @@
 .nav a.active {
 }
 .close {
+    border: none; outline: none;
+    margin-left: 150px;
+    background-color: white;
 }
 
 .close img {
