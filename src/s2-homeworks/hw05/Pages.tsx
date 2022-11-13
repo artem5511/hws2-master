@@ -14,19 +14,23 @@ export const PATH = {
 function Pages() {
     return (
         <div>
+            {/*<header>*/}
+            {/*    <Navigate to={"/"}>PreJunior</Navigate>*/}
+            {/*    <Navigate to={'/junior'}>Junior</Navigate>*/}
+            {/*    <Navigate to={'/junior-plus'}>JuniorPlus</Navigate>*/}
+            {/*</header>*/}
             {/*Routes выбирает первый подходящий роут*/}
             <Routes>
                 {/*роутинг будут писать студенты*/}
                 {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу /pre-junior*/}
-                {/*<Route ...*/}
+                <Route path={"/"} element={<PreJunior/>}/>
 
                 {/*роуты для /pre-junior, /junior, /junior-plus*/}
-                {/*<Route ...*/}
-                {/*<Route ...*/}
-                {/*<Route ...*/}
-
+                {/*<Route path={"/pre-junior"} element={<PreJunior/>}/>*/}
+                <Route path={"/junior"} element={<Junior/>}/>
+                <Route path={"/junior-plus"} element={<JuniorPlus/>}/>
                 {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
-                {/*<Route ...*/}
+                <Route path={"*"} element={<Error404/>}/>
             </Routes>
         </div>
     )

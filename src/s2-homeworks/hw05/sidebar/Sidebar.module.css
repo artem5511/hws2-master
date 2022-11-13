@@ -5,9 +5,12 @@
 }
 
 .background {
+
 }
 
 .nav {
+    display: flex;
+    flex-direction: column;
 }
 
 .nav a {
