@@ -1,12 +1,13 @@
 .sidebar {
- width: 300px;
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+    transform: translateX(-115%);
 }
 .open {
-
-    width: 350px;
-    height: 100%;
-    transform: translateX(-100%);
+    background-color: darkgray;
+    transform: translateX(0);
 }
 
 
@@ -16,14 +17,13 @@
 }
 
 
-
 .background {
 opacity: 0.5%;
 
 }
 
 .nav {
-    height: 100px;
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -40,10 +40,13 @@ opacity: 0.5%;
 
 .nav a.active {
     color: #CC1439;
+    transform: translateX(0);
 }
 .close {
+    display: flex;
+    margin-left: auto;
+    width: 20px;
     border: none; outline: none;
-    margin-left: 150px;
     background-color: white;
 }
 
