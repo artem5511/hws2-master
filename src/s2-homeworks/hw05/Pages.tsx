@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, NavLink } from 'react-router-dom'
 import Error404 from './pages/Error404'
 import PreJunior from './pages/PreJunior'
 import Junior from './pages/Junior'
@@ -15,9 +15,9 @@ function Pages() {
     return (
         <div>
             {/*<header>*/}
-            {/*    <Navigate to={"/"}>PreJunior</Navigate>*/}
-            {/*    <Navigate to={'/junior'}>Junior</Navigate>*/}
-            {/*    <Navigate to={'/junior-plus'}>JuniorPlus</Navigate>*/}
+            {/*    <NavLink to={"/"}>PreJunior</NavLink>*/}
+            {/*    <NavLink to={'/junior'}>Junior</NavLink>*/}
+            {/*    <NavLink to={'/junior-plus'}>JuniorPlus</NavLink>*/}
             {/*</header>*/}
             {/*Routes выбирает первый подходящий роут*/}
             <Routes>
@@ -28,7 +28,7 @@ function Pages() {
                 {/*роуты для /pre-junior, /junior, /junior-plus*/}
                 <Route path={'PRE_JUNIOR'} element={<PreJunior/>}/>
                 <Route path={'JUNIOR'} element={<Junior/>}/>
-                <Route path={'JUNIOR_PLUS'} element={<JuniorPlus/>}/>
+                <Route path={'/junior-plus'} element={<JuniorPlus/>}/>
                 {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
                 <Route path={"*"} element={<Error404/>}/>
             </Routes>
