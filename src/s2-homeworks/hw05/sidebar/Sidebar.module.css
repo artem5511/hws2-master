@@ -109,6 +109,7 @@
 
 .nav a.active {
     color: #58ACFF;
+    background-color: gold;
 }
 
 .close {
