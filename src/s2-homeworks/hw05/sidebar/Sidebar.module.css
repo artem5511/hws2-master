@@ -1,118 +1,120 @@
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 100%;
-    transform: translateX(-115%);
-}
-.open {
-    background-color: darkgray;
-    transform: translateX(0);
-}
-
-
-.sidebar.open {
-    background-color: darkgray;
-    transform: translateX(0);
-}
-
-
-.background {
-opacity: 0.5%;
-
-}
-
-.nav {
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-}
-
-.nav a {
-    color: #0066cc;
-}
-
-.nav a:hover {
-    color: #00cc22;
-}
-
-.nav a.active {
-    color: #CC1439;
-    transform: translateX(0);
-}
-.close {
-    display: flex;
-    margin-left: auto;
-    width: 20px;
-    border: none; outline: none;
-    background-color: white;
-}
-
-.close img {
-}
-
-/* из канады
 /*.sidebar {*/
 /*    display: flex;*/
 /*    flex-direction: column;*/
-/*    z-index: 2;*/
-/*    left: -100%;*/
-/*    position: fixed;*/
-/*    transition: 850ms;*/
-/*    background: #FFFFFF;*/
-/*    visibility: hidden;*/
+/*    width: 200px;*/
+/*    height: 100%;*/
+/*    transform: translateX(-115%);*/
 /*}*/
+/*.open {*/
+/*    background-color: darkgray;*/
+/*    transform: translateX(0);*/
+/*}*/
+
 
 /*.sidebar.open {*/
-/*    left: 0;*/
-/*    position: fixed;*/
-/*    visibility: visible;*/
+/*    background-color: darkgray;*/
+/*    transform: translateX(0);*/
 /*}*/
 
+
 /*.background {*/
-/*    position: fixed;*/
-/*    z-index: 1;*/
-/*    width: 1000vw;*/
-/*    height: 100vh;*/
-/*    background: #000000;*/
-/*    opacity: 0.3;*/
+/*opacity: 0.5%;*/
+
 /*}*/
 
 /*.nav {*/
-/*    width: 30vw;*/
-/*    height: 100vh;*/
+/*    height: 70px;*/
 /*    display: flex;*/
 /*    flex-direction: column;*/
-/*    justify-content: flex-start;*/
-/*    align-items: center;*/
+/*    justify-content: space-evenly;*/
+
 /*}*/
 
 /*.nav a {*/
-/*    margin: 20px;*/
-
-/*    font-family: 'Montserrat';*/
-/*    color: #000000;*/
-/*    font-style: normal;*/
-/*    font-weight: 600;*/
-/*    font-size: 22px;*/
-/*    line-height: 27px;*/
-/*    text-decoration-line: none;*/
+/*    color: #0066cc;*/
 /*}*/
 
 /*.nav a:hover {*/
-/*    text-decoration-line: underline;*/
+/*    color: #00cc22;*/
 /*}*/
 
 /*.nav a.active {*/
-/*    color: #58ACFF;*/
+/*    color: #CC1439;*/
+/*    transform: translateX(0);*/
+/*}*/
+/*.close {*/
+/*    display: flex;*/
+/*    margin-left: auto;*/
+/*    width: 20px;*/
+/*    border: none; outline: none;*/
+/*    background-color: white;*/
 /*}*/
 
-/*.close {*/
-/*    align-self: flex-end;*/
-/*    width: 15%;*/
-/*    height: 60px;*/
-/*    border: none;*/
-/*    background: #FFFFFF;*/
+/*.close img {*/
 /*}*/
+
+/* из канады
+*/
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    left: -100%;
+    position: fixed;
+    transition: 850ms;
+    background: #FFFFFF;
+    visibility: hidden;
+}
+
+.sidebar.open {
+    left: 0;
+    position: fixed;
+    visibility: visible;
+}
+
+.background {
+    position: fixed;
+    z-index: 1;
+    width: 1000vw;
+    height: 100vh;
+    background: #000000;
+    opacity: 0.3;
+}
+
+.nav {
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav a {
+    margin: 20px;
+
+    font-family: 'Montserrat';
+    color: #000000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-decoration-line: none;
+}
+
+.nav a:hover {
+    text-decoration-line: underline;
+}
+
+.nav a.active {
+    color: #58ACFF;
+}
+
+.close {
+    align-self: flex-end;
+    width: 15%;
+    height: 60px;
+    border: none;
+    background: #FFFFFF;
+}
